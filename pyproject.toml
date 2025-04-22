@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pixopera"
+version = "0.1.0"
+description = "You got a favourite image? import it in pixopera and produce your pixelart version of it! Have fun making it more or less precise and let me know if you like it."
+authors = ["Enrico Cecchetti <enrico.cecchetti@kcitylabs.fr>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+black = "^25.1.0"
+pillow = "^11.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+pixopera = "pixopera.main:main"
